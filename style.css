@@ -1,6 +1,6 @@
 :root {
-    --background: #E5D3DB;
-    --surface: #333333;
+    --background: #333333;
+    --surface: #E5D3DB;
     --num-btn-color: #E49EBE;
     --num-btn-sec-color: #890B48;
     --op-btn-color: #F2F2E9;
@@ -11,31 +11,103 @@ body {
     background-color: var(--background);
     margin: 0;
     padding: 0;
+}
+
+main {
+    margin-top: 5rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main {
-    margin-top: 10rem;
+section {
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: max-content;
 }
 
 button {
     border: none;
-    border-radius: 5px;
+    border-radius: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    color: var(--text-color);
 }
 
 .display {
     width: 100%;
-    height: 3rem;
+    height: 9rem;
     background-color: var(--surface);
     color: var(--text-color);
-    font-size: 1.5rem;
     text-align: right;
     padding: 0.5rem;
-    margin-bottom: 5rem;
+}
+
+#expression {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#result {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--num-btn-sec-color);
+}
+
+.whiteButton {
+    background-color: var(--op-btn-color);
+}
+
+.pinkButton {
+    background-color: var(--num-btn-color);
+}
+
+.pinkerButton {
+    background-color: var(--num-btn-sec-color);
+    color: var(--surface);
+}
+
+.whiteButton:active,
+.pinkButton:active {
+    background-color: var(--num-btn-sec-color);
+    color: var(--surface);
+}
+
+.pinkerButton:active {
+    background-color: var(--num-btn-color);
+    color: var(--text-color);
+}
+
+.zeroButton {
+    width: 9.2rem;
+}
+
+.addButton,
+.pinkerButton {
+    height: 6.4rem;
+}
+
+.calcButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
