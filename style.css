@@ -1,0 +1,17 @@
+:root {
+    --background: #E5D3DB;
+    --surface: #333333;
+    --num-btn-color: #E49EBE;
+    --num-btn-sec-color: #890B48;
+    --op-btn-color: #F2F2E9;
+    --text-color: #141114;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
